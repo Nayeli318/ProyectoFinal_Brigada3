@@ -1,0 +1,63 @@
+#include <stdio..h>
+int validaCadena(const char * cadena)
+{
+    int tam,
+    int num1,
+    int num2,
+    int tam = strlen(cadena);
+   
+    if (tam%2 !=0 )
+    {
+        printf ("0");
+    }
+    if (tam == 0)
+    {
+        printf ("0");
+    }
+    int tamA = tam/2;
+    int tamB = tam/2;
+
+     if ( cadena[0] == "0" )
+     {
+        num1 = 0;
+        for (num1 = 0; num1<tamA-1;num1++)
+        {
+           if (cadena[num1] != cadena [num2+1])
+            {
+               printf ("0");
+            }
+         }
+     }
+      if (cadena[num1+1] == "1")
+      {
+           for (num2= num1+1; num1<tam -1; num2++)
+        {
+           if (cadena[num2] != cadena[num2+1])
+           {
+              printf ("0")
+           }
+         }
+       }
+       if (cadena [0]=="1")
+       {
+          num1 = 0;
+          for (num1=0; num1<tamB;num1++)
+           {
+              if (cadena [num1] != cadena (num1 + 1]))
+              {
+                 printf ("0")
+              }
+            }
+        }
+        if (cadena[num1+1]==0)
+        {
+          for (num2=num1+1;num2<tam-1;num2++)
+          {
+             if cadena[num2] != cadena (num2+1)
+             {
+                printf ("0");
+             }
+           }
+         }
+         return 0;
+}
